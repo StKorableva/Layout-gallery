@@ -1,0 +1,137 @@
+.container {
+  background-color: #BFCBC2;
+
+  min-height: 800px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  font-family: Barlow, sans-serif;
+}
+
+.view-1 {
+  height: 600px;
+  width: 350px;
+
+  background-image: url("../../assets/images/background-ex-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: relative;
+
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  color: white;
+
+  &__text-1 {
+    margin-bottom: 15px;
+    padding-left: 30px;
+
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+
+  &__text-2 {
+    width: 170px;
+
+    font-size: 35px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    margin-bottom: 30px;
+    padding-left: 30px;
+  }
+
+  &__button{
+    height: 26px;
+    width: 67px;
+
+    margin-left: 30px;
+
+    cursor: pointer;
+
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  }
+
+.view-2 {
+  height: 600px;
+  width: 350px;
+
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+
+  background-color: #f4f4f4;
+
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+
+  &__content1, &__content2 {
+    padding: 40px 30px 0 30px;
+    overflow: hidden;
+  }
+
+  span.view-2__content1::first-letter {
+    font-family: Barlow, serif;
+    font-size: 5.5em;
+    float: left;
+    margin: -30px 10px -30px 0;
+  }
+}
+
+.view-3 {
+  height: 600px;
+  width: 350px;
+
+  background-color: #f4f4f4;
+
+  &__header {
+    padding: 20px;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__text {
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+
+  &__button {
+    position: absolute;
+    right: 20px;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    background: none;
+    border: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    width: 100%;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+}
