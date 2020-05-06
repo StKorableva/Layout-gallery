@@ -1,18 +1,16 @@
 .container {
-  background-color: #BFCBC2;
-
-  min-height: 800px;
-
   display: flex;
   justify-content: space-around;
   align-items: center;
+
+  margin-top: 5%;
 
   font-family: Barlow, sans-serif;
 }
 
 .view-1 {
   height: 600px;
-  width: 350px;
+  width: 320px;
 
   background-image: url("../../assets/images/background-ex-1.jpg");
   background-position: center;
@@ -64,7 +62,7 @@
 
 .view-2 {
   height: 600px;
-  width: 350px;
+  width: 320px;
 
   position: relative;
   display: flex;
@@ -92,7 +90,7 @@
 
 .view-3 {
   height: 600px;
-  width: 350px;
+  width: 320px;
 
   background-color: #f4f4f4;
 
@@ -126,12 +124,15 @@
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 700px) {
   .container {
     width: 100%;
 
     display: flex;
     flex-flow: column;
     justify-content: center;
+  }
+  .view-1, .view-2, .view-3 {
+    margin: 5vw 0;
   }
 }

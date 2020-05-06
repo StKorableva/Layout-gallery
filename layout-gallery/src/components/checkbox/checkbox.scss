@@ -1,0 +1,54 @@
+.checkbox {
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.checkmark {
+  display: block;
+
+  width: 18px;
+  height: 18px;
+
+  margin: 3px;
+
+  border: 1px solid #d3d3d3;
+  border-radius: 3px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 12px 12px;
+  background-color: #e9e9e9;
+
+  transition: .3s;
+}
+
+.checkmark:hover,
+.checkmark:focus {
+  background-color: #ffc0c1;
+}
+
+.input:checked ~ .checkmark,
+.input:checked ~ .checkmark:hover {
+  background-color: #e52b50;
+  background-image: url(../../assets/icons/checkbox/tick.svg);
+}
+
+.input:disabled ~ .checkmark,
+.input:checked:disabled ~ .checkmark,
+.input:checked:disabled:hover ~ .checkmark {
+  opacity: .2;
+  cursor: default;
+}
+.label {
+  margin-top: 2px; /* For correct font */
+  padding: 0 5px;
+}

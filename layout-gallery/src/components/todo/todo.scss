@@ -1,0 +1,42 @@
+.todo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 290px;
+
+  margin-bottom: 15px;
+
+  &__text {
+    width: 200px;
+
+    word-wrap: break-word;
+
+    color: #666666;
+
+    padding: 0 5%;
+  }
+
+  &__button {
+    width: 25px;
+    height: 25px;
+
+    border: none;
+    cursor: pointer;
+
+    background-color: #f4f4f4;
+  }
+
+  &__img {
+    width: 25px;
+    height: 25px;
+  }
+
+  &_completed {
+    text-decoration: line-through;
+  }
+
+  &_special {
+    fill: yellow;
+  }
+}
