@@ -1,0 +1,178 @@
+.example3 {
+  height: 100vh;
+
+  background-image: url("../../assets/images/background-ex-3.jpg");
+  background-position: center;
+  background-size: cover;
+
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 100vh;
+
+    background-color: #3f3f3f;
+    opacity: 0.9;
+
+    z-index: 0;
+  }
+
+  &-container {
+    width: 840px;
+    height: 655px;
+
+    display: flex;
+    align-items: flex-start;
+
+    background-color: #ffffff;
+
+    border-radius: 2%;
+
+    z-index: 1;
+  }
+
+  &__left-side {
+    height: 655px;
+    width: 470px;
+
+    padding-left: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+    background-image: url("../../assets/images/background-ex-3.jpg");
+    background-position: center;
+    background-size: cover;
+
+    border-radius: 2% 0 0 2%;
+  }
+
+  &__city-name {
+    font-size: 120px;
+    color: #ffffff;
+
+    word-wrap: break-word;
+
+    line-height: 110px;
+
+    display: block;
+
+    margin-bottom: 20px;
+  }
+
+  &__line {
+    width: 467px;
+
+    size: 1px;
+
+    color: #ffffff;
+
+    margin-bottom: 30px;
+  }
+
+  &__hash-container {
+    margin-bottom: 30px;
+  }
+
+  &__hash {
+    padding-right: 15px;
+
+    color: #ffffff;
+  }
+
+  &__right-side {
+    margin-top: 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    &__statue-text {
+      font-size: 25px;
+      font-weight: 600;
+
+      padding-left: 50px;
+      margin-bottom: 15px;
+    }
+
+    &__like {
+      color: #6ebacd;
+
+      padding-left: 50px;
+      margin-bottom: 45px;
+    }
+
+    &__content {
+      color: #A9A9A9;
+      font-size: 20px;
+
+      width: 190px;
+
+      padding-left: 50px;
+      margin-bottom: 60px;
+    }
+
+    &__img {
+      width: 320px;
+      height: 150px;
+
+      margin-bottom: -5px;
+
+    }
+
+    &__footer {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      position: relative;
+
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        height: 80px;
+        width: 240px;
+
+        background-color: #3f1177;
+        opacity: 0.7;
+      }
+    }
+
+    &__city-img {
+      width: 80px;
+      height: 80px;
+    }
+
+    &__city-other{
+      width: 80px;
+      height: 80px;
+
+      color: #ffffff;
+
+      text-align: center;
+      line-height: 80px;
+
+      background-color: #A9A9A9;
+    }
+  }
+}

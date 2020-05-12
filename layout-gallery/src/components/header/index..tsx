@@ -17,12 +17,6 @@ export default function Header() {
                     <li className='header__list-item'>
                         <Link className='header__link' to="/example3">Example 3</Link>
                     </li>
-                    <li className='header__list-item'>
-                        <Link className='header__link' to="/example4">Example 4</Link>
-                    </li>
-                    <li className='header__list-item'>
-                        <Link className='header__link' to="/example5">Example 5</Link>
-                    </li>
                 </ul>
         </div>
     );
